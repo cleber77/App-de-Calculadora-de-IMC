@@ -25,7 +25,7 @@
                  android:layout_height="wrap_content"
                  android:layout_marginStart="20dp"
                  android:layout_marginEnd="20dp"
-                 android:layout_marginTop="20dp"
+                 android:layout_marginTop="30dp"
                  android:hint="Informa seu peso (kg)"
                  app:hintTextColor="@color/blue"
                  app:boxStrokeColor="@color/teal_200"
@@ -37,18 +37,20 @@
                  android:layout_width="match_parent"
                  android:layout_height="match_parent"
                  android:inputType="numberDecimal"
-                 />
-         </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
+                 />
+              </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
+                   android:layout_marginTop="30dp"
         android:hint="Informa seu Altura (Metro e cm) "
         app:hintTextColor="@color/blue"
         app:boxStrokeColor="@color/teal_200"
+        app:errorEnabled="true"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         >
 
@@ -71,6 +73,7 @@
         android:layout_marginStart="50dp"
         android:textAllCaps="false"
         android:padding="15dp"
+        app:errorEnabled="true"
         android:backgroundTint="@color/blue"
         />
 
@@ -78,7 +81,7 @@
         android:id="@+id/textResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="khksks"
+        android:text=""
         android:textSize="22dp"
         android:textColor="@color/blue"
         android:textStyle="bold"
