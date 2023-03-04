@@ -11,9 +11,12 @@ import android.view.View;
 
 import com.cleberapp.calculadoradeimc.databinding.ActivityMainBinding;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    private Object DecimalFormat;
 
 
     @Override
@@ -50,18 +53,22 @@ public class MainActivity extends AppCompatActivity {
         float altura = Float.parseFloat(binding.editAltura.getText().toString());
         float imc = peso / (altura * altura);
 
+          DecimalFormat decimalFormat = new DecimalFormat("0.00");
+
+
+
         if (imc <  18.5){
-            binding.textResultado.setText("Seu IMC é de "+ imc +"\n" + "Peso Baixo");
+            binding.textResultado.setText("Seu IMC é de "+ decimalFormat.format(imc)+"\n" + "Peso Baixo");
         }else if ( imc <= 24.9) {
-            binding.textResultado.setText("Seu IMC é de "+ imc +"\n" + "Peso Normal");
+            binding.textResultado.setText("Seu IMC é de "+ decimalFormat.format(imc)+"\n" + "Peso Normal");
         }else if(imc <= 29.9){
-            binding.textResultado.setText("Seu IMC é de "+ imc +"\n" + "Sobrepeso");
+            binding.textResultado.setText("Seu IMC é de "+ decimalFormat.format(imc)+"\n" + "Sobrepeso");
         }else if ( imc <= 34.9){
-            binding.textResultado.setText("Seu IMC é de "+ imc +"\n" + "Obesidade (Grau 1)");
+            binding.textResultado.setText("Seu IMC é de "+ decimalFormat.format(imc) +"\n" + "Obesidade (Grau 1)");
         }else if  ( imc <= 40.9){
-            binding.textResultado.setText("Seu IMC é de "+ imc +"\n" + "Obesidade Severa (Grau 2)");
+            binding.textResultado.setText("Seu IMC é de "+ decimalFormat.format(imc) +"\n" + "Obesidade Severa (Grau 2)");
         }else if (imc <= 44.9){
-            binding.textResultado.setText("Seu IMC é de "+ imc +"\n" + "Obesidade Severa (Grau 3)");
+            binding.textResultado.setText("Seu IMC é de "+ decimalFormat.format(imc) +"\n" + "Obesidade Severa (Grau 3)");
         }
       }
 
