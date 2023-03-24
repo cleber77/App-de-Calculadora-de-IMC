@@ -1,4 +1,4 @@
-package com.cleberapp.calculadoradeimc;
+package com.Cleber.meubanco;
 
 import org.junit.Test;
 

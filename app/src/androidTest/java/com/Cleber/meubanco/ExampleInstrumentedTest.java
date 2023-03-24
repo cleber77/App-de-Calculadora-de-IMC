@@ -1,4 +1,4 @@
-package com.cleberapp.calculadoradeimc;
+package com.Cleber.meubanco;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.cleberapp.calculadoradeimc", appContext.getPackageName());
+        assertEquals("com.Cleber.meubanco", appContext.getPackageName());
     }
 }
