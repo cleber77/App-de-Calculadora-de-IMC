@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Saldo">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSaldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:title="Saldo"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/baseline_volta"
+
+        />
 
     <TextView
         android:layout_width="match_parent"
